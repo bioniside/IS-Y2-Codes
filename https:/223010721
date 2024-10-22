@@ -1,0 +1,361 @@
+reg No: 223010721
+
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package question1;
+
+/**
+ *
+ * @author bioni
+ */
+import java.util.Scanner;
+public class Q1EvenOdd {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the number");
+        int number =sc.nextInt();
+        if (number %2==0){
+            System.out.println(number+""+":is Even");
+            
+        }
+        else if (number%2!=0){
+            System.out.println(number + ""+":is Odd");
+        }
+    }
+    
+}
+
+
+Q2
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author user
+ */
+import java.util.Scanner;
+public class Q2Grade {
+public static void main(String[]args){
+Scanner obj=new Scanner(System.in);
+  System.out.print("Enter your grade (A, B, C, D, F): ");
+  String grade = obj.next().toUpperCase(); 
+
+        switch (grade) {
+            case "A":
+                System.out.println("Excellent work!");
+                break;
+            case "B":
+                System.out.println("Good job!");
+                break;
+            case "C":
+                System.out.println("You passed!");
+                break;
+            case "D":
+                System.out.println("You need to improve.");
+                break;
+            case "F":
+                System.out.println("You failed. Try harder next time.");
+                break;
+            default:
+                System.out.println("Invalid grade entered. Please enter A, B, C, D, or F.");
+                break;
+        }
+
+       obj.close();
+    }
+}
+
+
+Q3
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author bioni
+ */
+import java.util.Scanner;
+public class Q3leapYear {
+    public static void main(String arg[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the year");
+        int year= sc.nextInt();
+        if((year % 4==0 && year %100!=0)||(year %400==0)){
+        System.out.println(year +""+"is leap year");
+        }
+        else{
+            System.out.println(year +""+"is not leap year.");
+        }
+    }
+}
+
+Q4
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author bioni
+ */
+import java.util.Scanner;
+public class Q4greatestNumber {
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter first number");
+        int num1=sc.nextInt();
+         System.out.println("enter first number");
+         int num2=sc.nextInt();
+          System.out.println("enter first number");
+          int num3=sc.nextInt();
+          if (num1>num2 && num1>num3){
+               System.out.println(num1+" : is largest");
+          }
+          else if (num2>num1 && num2>num3){
+               System.out.println(num2+" : is largest");
+    }
+          else  if (num3>num1 && num3>num2){
+               System.out.println(num3+" : is largest");
+          }
+}
+}
+Q5
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author bioni
+ */
+import java.util.Scanner;
+public class Q5check {
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the number");
+        int number= sc.nextInt();
+        if (number>0){
+            System.out.println(number+""+":is POSITIVE");
+            
+        }
+       else if (number<0){
+            System.out.println(number+""+":is NEGATIVE");
+    }
+        else {
+         
+            System.out.println(number+""+":is Zero");
+        }
+}}
+
+Q6
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author bioni
+ */
+import java.util.Scanner;
+public class Q6trianglePattener {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Get the number of rows from the user
+        System.out.print("Enter the number of rows: ");
+        int num = sc.nextInt();
+
+        // Loop to print the right-angled triangle
+        for (int i = 1; i <= num; i++) {
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+            }
+            System.out.println("\n"); // Move to the next line
+        }
+
+        sc.close();
+    }
+}
+Q7
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author user
+ */
+import java.util.Scanner;
+public class Q7diamondShape{
+    public static void main (String[]args){
+        Scanner obj = new Scanner(System.in);
+        
+        System.out.print("Enter the number for the diamond (half): ");
+        int num = obj.nextInt();
+        for (int i = 1; i <= num; i++) {
+        for (int j = num; j > i; j--) {
+        System.out.print(" ");
+        }
+            
+        for (int k = 1; k <= (2 * i - 1); k++) {
+        System.out.print("*");
+        }
+            
+        System.out.println();
+        }
+        for (int i = num - 1; i >= 1; i--) {
+            for (int j = num; j > i; j--) {
+                System.out.print(" ");
+            }
+            
+         for (int k = 1; k <= (2 * i - 1); k++) {
+        System.out.print("*");
+            }
+        System.out.println();
+        }
+
+      
+        }
+        }
+Q8
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author bioni
+ */
+public class Q8array {
+  
+    public static void main(String[] args) {
+     
+        int[] numbers = {10, 12, 34, 23, 56, 78};
+
+       
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+
+        double average = (double) sum / numbers.length;
+
+        System.out.println("The average is: " + average);
+    }
+}
+
+    
+
+Q9
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author bioni
+ */
+public class Q9reverse {
+   
+    public static void main(String[] args) {
+        // Define the input array
+        int[] numbers = {3, 4, 6, 1, 9, 7, 5, 8};
+
+        System.out.println("Original Array:");
+        printArray(numbers);
+
+        // Reverse the array
+        reverseArray(numbers);
+
+        System.out.println("Reversed Array:");
+        printArray(numbers);
+    }
+
+    // Method to reverse the elements of the array
+    public static void reverseArray(int[] array) {
+        int left = 0, right = array.length - 1;
+        while (left < right) {
+            // Swap elements
+            int temp = array[left];
+            array[left] = array[right];
+            array[right] = temp;
+
+            // Move towards the center
+            left++;
+            right--;
+        }
+    }
+
+    // Method to print the elements of the array
+    public static void printArray(int[] array) {
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
+
+    
+
+Q10
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author bioni
+ */
+public class Q10largeElement {
+    
+    public static void main(String[] args) {
+  
+        int[] numbers = {34, 23, 12, 45, 67, 89, 234, 26, 10, 30, 43};
+
+      
+        int largest = numbers[0];
+
+    
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+        }
+
+      
+        System.out.println("The largest element in the array is: " + largest);
+    }
+} 
+
+
+
